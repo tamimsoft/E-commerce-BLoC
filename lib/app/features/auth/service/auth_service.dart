@@ -1,5 +1,5 @@
-import 'package:ecommerce2/app/features/auth/data/repository/auth_api_repository.dart';
-import 'package:ecommerce2/app/utils/secure_storage/secure_storage.dart';
+import 'package:fakestore/app/core/services/secure_storage/secure_storage.dart';
+import 'package:fakestore/app/features/auth/data/repository/auth_api_repository.dart';
 
 class AuthService {
   final AuthApiRepository _authApiRepository;

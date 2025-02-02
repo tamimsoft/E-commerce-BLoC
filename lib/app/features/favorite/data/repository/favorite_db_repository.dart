@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:ecommerce2/app/database/app_database.dart';
-import 'package:ecommerce2/app/features/favorite/data/model/favorite_model.dart';
+import 'package:fakestore/app/core/services/database/app_database.dart';
+import 'package:fakestore/app/features/favorite/data/model/favorite_model.dart';
 import 'package:flutter/material.dart';
 
 class FavoriteDbRepository {

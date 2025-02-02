@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:ecommerce2/app/database/app_database.dart';
-import 'package:ecommerce2/app/features/product/data/model/product_model.dart';
+import 'package:fakestore/app/core/services/database/app_database.dart';
+import 'package:fakestore/app/features/product/data/model/product_model.dart';
 
 class FavoriteModel {
   final int productId;

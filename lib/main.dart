@@ -1,9 +1,10 @@
 // import 'package:firebase_core/firebase_core.dart';
 
-import 'package:ecommerce2/app/app.dart';
-import 'package:ecommerce2/app/dependency_injection.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'app/app.dart';
 
 // import 'firebase_options.dart';
 

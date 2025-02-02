@@ -1,5 +1,5 @@
-import 'package:ecommerce2/app/utils/constants/api_constants.dart';
-import 'package:ecommerce2/app/utils/network/api_client.dart';
+import 'package:fakestore/app/core/constants/api_constants.dart';
+import 'package:fakestore/app/core/services/network/api_client.dart';
 
 import 'auth_repository.dart';
 

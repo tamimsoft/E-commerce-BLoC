@@ -4,9 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pinput/pinput.dart';
 
-import '../../../../theme/custom/pin_theme.dart';
-import '../../../../utils/constants/app_colors.dart';
-import '../../../../utils/constants/app_strings.dart';
+import '../../../../core/theme/custom/pin_theme.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/app_strings.dart';
 
 class InputPinForm extends StatelessWidget {
   const InputPinForm({super.key});

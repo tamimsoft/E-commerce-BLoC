@@ -1,9 +1,9 @@
-import 'package:ecommerce2/app/dependency_injection.dart';
-import 'package:ecommerce2/app/features/category/data/model/category_model.dart';
-import 'package:ecommerce2/app/features/category/data/repository/category_api_repository.dart';
-import 'package:ecommerce2/app/features/category/data/repository/category_db_repository.dart';
-import 'package:ecommerce2/app/features/product/data/model/product_model.dart';
-import 'package:ecommerce2/app/features/product/service/product_service.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
+import 'package:fakestore/app/features/category/data/model/category_model.dart';
+import 'package:fakestore/app/features/category/data/repository/category_api_repository.dart';
+import 'package:fakestore/app/features/category/data/repository/category_db_repository.dart';
+import 'package:fakestore/app/features/product/data/model/product_model.dart';
+import 'package:fakestore/app/features/product/service/product_service.dart';
 
 class CategoryService {
   final CategoryDbRepository _dbRepo;

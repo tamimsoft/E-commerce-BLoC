@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:ecommerce2/app/features/auth/ui/bloc/auth_bloc.dart';
-import 'package:ecommerce2/app/features/auth/ui/widgets/widgets.dart';
-import 'package:ecommerce2/app/routes/routes_name.dart';
+import 'package:fakestore/app/features/auth/ui/bloc/auth_bloc.dart';
+import 'package:fakestore/app/features/auth/ui/widgets/widgets.dart';
+import 'package:fakestore/app/config/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

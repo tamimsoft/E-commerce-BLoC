@@ -1,5 +1,5 @@
-import 'package:ecommerce2/app/features/auth/ui/widgets/widgets.dart';
-import 'package:ecommerce2/app/utils/constants/app_strings.dart';
+import 'package:fakestore/app/features/auth/ui/widgets/widgets.dart';
+import 'package:fakestore/app/core/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 

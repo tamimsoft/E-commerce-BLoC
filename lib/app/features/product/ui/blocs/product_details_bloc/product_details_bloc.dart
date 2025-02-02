@@ -1,5 +1,5 @@
-import 'package:ecommerce2/app/features/product/data/model/product_details_model.dart';
-import 'package:ecommerce2/app/features/product/service/product_service.dart';
+import 'package:fakestore/app/features/product/data/model/product_details_model.dart';
+import 'package:fakestore/app/features/product/service/product_service.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,7 +1,6 @@
-import 'package:ecommerce2/app/features/cart/ui/bloc/cart_bloc.dart';
-import 'package:ecommerce2/app/features/cart/ui/widgets/checkout_button.dart';
-import 'package:ecommerce2/app/features/checkout/ui/bloc/checkout_bloc.dart';
-import 'package:ecommerce2/app/utils/constants/app_colors.dart';
+import 'package:fakestore/app/features/cart/ui/bloc/cart_bloc.dart';
+import 'package:fakestore/app/features/cart/ui/widgets/checkout_button.dart';
+import 'package:fakestore/app/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

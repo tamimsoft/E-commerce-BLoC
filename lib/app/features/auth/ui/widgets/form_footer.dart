@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../utils/constants/app_colors.dart';
+import '../../../../core/constants/app_colors.dart';
 
 class FormFooter extends StatelessWidget {
   const FormFooter({

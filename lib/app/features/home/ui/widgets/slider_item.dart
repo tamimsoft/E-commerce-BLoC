@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../../../../utils/constants/app_colors.dart';
-import '../../../common/widgets/shimmer_placeholder.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../common/widgets/shimmer_placeholder.dart';
 import '../../data/models/slider_model.dart';
 
 class SliderItem extends StatelessWidget {

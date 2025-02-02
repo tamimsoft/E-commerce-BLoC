@@ -1,6 +1,6 @@
-import 'package:ecommerce2/app/features/common/widgets/shimmer_placeholder.dart';
-import 'package:ecommerce2/app/features/product/ui/blocs/product_details_bloc/product_details_bloc.dart';
-import 'package:ecommerce2/app/utils/helper/functions.dart';
+import 'package:fakestore/app/common/widgets/shimmer_placeholder.dart';
+import 'package:fakestore/app/features/product/ui/blocs/product_details_bloc/product_details_bloc.dart';
+import 'package:fakestore/app/utils/helper/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

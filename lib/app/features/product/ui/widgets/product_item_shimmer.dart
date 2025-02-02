@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../common/widgets/shimmer_placeholder.dart';
+import '../../../../common/widgets/shimmer_placeholder.dart';
 
 class ProductItemShimmer extends StatelessWidget {
   const ProductItemShimmer({

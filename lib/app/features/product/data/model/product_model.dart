@@ -1,7 +1,6 @@
 import 'package:drift/drift.dart';
 
-import '../../../../database/app_database.dart';
-
+import 'package:fakestore/app/core/services/database/app_database.dart';
 class ProductModel {
   final int id;
   final String title;

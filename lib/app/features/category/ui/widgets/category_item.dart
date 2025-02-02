@@ -1,7 +1,7 @@
-import 'package:ecommerce2/app/features/category/data/model/category_model.dart';
-import 'package:ecommerce2/app/features/common/widgets/widgets.dart';
-import 'package:ecommerce2/app/routes/routes_name.dart';
-import 'package:ecommerce2/app/utils/constants/app_colors.dart';
+import 'package:fakestore/app/features/category/data/model/category_model.dart';
+import 'package:fakestore/app/common/widgets/widgets.dart';
+import 'package:fakestore/app/config/routes/routes_name.dart';
+import 'package:fakestore/app/core/constants/app_colors.dart';
 
 import 'package:flutter/material.dart';
 

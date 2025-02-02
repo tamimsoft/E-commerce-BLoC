@@ -1,7 +1,7 @@
-import 'package:ecommerce2/app/dependency_injection.dart';
-import 'package:ecommerce2/app/features/favorite/ui/bloc/favorite_bloc.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/product_item.dart';
-import 'package:ecommerce2/app/utils/constants/image_path.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
+import 'package:fakestore/app/features/favorite/ui/bloc/favorite_bloc.dart';
+import 'package:fakestore/app/features/product/ui/widgets/product_item.dart';
+import 'package:fakestore/app/core/constants/image_path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

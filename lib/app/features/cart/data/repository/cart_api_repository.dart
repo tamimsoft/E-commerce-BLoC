@@ -1,6 +1,6 @@
-import 'package:ecommerce2/app/features/cart/data/model/cart_model.dart';
-import 'package:ecommerce2/app/utils/constants/api_constants.dart';
-import 'package:ecommerce2/app/utils/network/api_client.dart';
+import 'package:fakestore/app/features/cart/data/model/cart_model.dart';
+import 'package:fakestore/app/core/constants/api_constants.dart';
+import 'package:fakestore/app/core/services/network/api_client.dart';
 
 class CartApiRepository {
   ApiClient apiClient;

@@ -1,6 +1,5 @@
 import 'package:drift/drift.dart';
-import 'package:ecommerce2/app/database/app_database.dart';
-
+import 'package:fakestore/app/core/services/database/app_database.dart';
 
 class ProductDetailsModel {
   final int productId;

@@ -1,8 +1,8 @@
-import 'package:ecommerce2/app/dependency_injection.dart';
-import 'package:ecommerce2/app/features/auth/service/auth_service.dart';
-import 'package:ecommerce2/app/features/cart/data/model/cart_model.dart';
-import 'package:ecommerce2/app/features/cart/data/repository/cart_api_repository.dart';
-import 'package:ecommerce2/app/features/cart/data/repository/cart_db_repository.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
+import 'package:fakestore/app/features/auth/service/auth_service.dart';
+import 'package:fakestore/app/features/cart/data/model/cart_model.dart';
+import 'package:fakestore/app/features/cart/data/repository/cart_api_repository.dart';
+import 'package:fakestore/app/features/cart/data/repository/cart_db_repository.dart';
 
 class CartService {
   final CartDbRepository _dbRepo;

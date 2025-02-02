@@ -1,7 +1,7 @@
-import 'package:ecommerce2/app/features/home/ui/widgets/widgets.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/new_product_list.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/popular_product_list.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/special_product_list.dart';
+import 'package:fakestore/app/features/home/ui/widgets/widgets.dart';
+import 'package:fakestore/app/features/product/ui/widgets/new_product_list.dart';
+import 'package:fakestore/app/features/product/ui/widgets/popular_product_list.dart';
+import 'package:fakestore/app/features/product/ui/widgets/special_product_list.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {

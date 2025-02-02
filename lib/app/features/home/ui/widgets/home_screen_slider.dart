@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ecommerce2/app/dependency_injection.dart';
-import 'package:ecommerce2/app/features/common/widgets/widgets.dart';
-import 'package:ecommerce2/app/features/home/data/models/slider_model.dart';
-import 'package:ecommerce2/app/features/home/ui/blocs/slider/slider_bloc.dart';
-import 'package:ecommerce2/app/features/home/ui/widgets/slider_item.dart';
-import 'package:ecommerce2/app/utils/constants/app_colors.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
+import 'package:fakestore/app/common/widgets/widgets.dart';
+import 'package:fakestore/app/features/home/data/models/slider_model.dart';
+import 'package:fakestore/app/features/home/ui/blocs/slider/slider_bloc.dart';
+import 'package:fakestore/app/features/home/ui/widgets/slider_item.dart';
+import 'package:fakestore/app/core/constants/app_colors.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 

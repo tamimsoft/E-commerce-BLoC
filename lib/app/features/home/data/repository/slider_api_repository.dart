@@ -1,8 +1,8 @@
 
 
-import '../../../../utils/constants/api_constants.dart';
-import '../../../../utils/network/api_client.dart';
-import '../models/slider_model.dart';
+import 'package:fakestore/app/core/constants/api_constants.dart';
+import 'package:fakestore/app/core/services/network/api_client.dart';
+import 'package:fakestore/app/features/home/data/models/slider_model.dart';
 
 class SliderApiRepository {
   ApiClient apiClient;

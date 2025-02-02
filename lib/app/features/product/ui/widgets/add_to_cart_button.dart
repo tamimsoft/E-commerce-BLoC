@@ -1,7 +1,7 @@
-import 'package:ecommerce2/app/features/cart/ui/bloc/cart_bloc.dart';
-import 'package:ecommerce2/app/features/product/data/model/product_model.dart';
-import 'package:ecommerce2/app/utils/constants/app_colors.dart';
-import 'package:ecommerce2/app/utils/helper/snack_bar.dart';
+import 'package:fakestore/app/features/cart/ui/bloc/cart_bloc.dart';
+import 'package:fakestore/app/features/product/data/model/product_model.dart';
+import 'package:fakestore/app/core/constants/app_colors.dart';
+import 'package:fakestore/app/utils/helper/snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

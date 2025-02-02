@@ -1,10 +1,10 @@
-import 'package:ecommerce2/app/features/cart/data/model/cart_model.dart';
-import 'package:ecommerce2/app/features/cart/ui/bloc/cart_bloc.dart';
-import 'package:ecommerce2/app/features/common/widgets/custom_network_image.dart';
-import 'package:ecommerce2/app/features/common/widgets/quantity_update_button.dart';
-import 'package:ecommerce2/app/routes/routes_name.dart';
-import 'package:ecommerce2/app/utils/constants/app_colors.dart';
-import 'package:ecommerce2/app/utils/helper/dialog_box.dart';
+import 'package:fakestore/app/features/cart/data/model/cart_model.dart';
+import 'package:fakestore/app/features/cart/ui/bloc/cart_bloc.dart';
+import 'package:fakestore/app/common/widgets/custom_network_image.dart';
+import 'package:fakestore/app/common/widgets/quantity_update_button.dart';
+import 'package:fakestore/app/config/routes/routes_name.dart';
+import 'package:fakestore/app/core/constants/app_colors.dart';
+import 'package:fakestore/app/utils/helper/dialog_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

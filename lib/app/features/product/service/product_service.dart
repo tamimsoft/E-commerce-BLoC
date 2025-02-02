@@ -1,8 +1,8 @@
-import 'package:ecommerce2/app/features/product/data/model/product_details_model.dart';
-import 'package:ecommerce2/app/features/product/data/model/product_model.dart';
-import 'package:ecommerce2/app/features/product/data/repository/product_api_repository.dart';
-import 'package:ecommerce2/app/features/product/data/repository/product_db_repository.dart';
-import 'package:ecommerce2/app/utils/constants/enums.dart';
+import 'package:fakestore/app/features/product/data/model/product_details_model.dart';
+import 'package:fakestore/app/features/product/data/model/product_model.dart';
+import 'package:fakestore/app/features/product/data/repository/product_api_repository.dart';
+import 'package:fakestore/app/features/product/data/repository/product_db_repository.dart';
+import 'package:fakestore/app/core/constants/enums.dart';
 
 class ProductService {
   final ProductDbRepository _dbRepo;

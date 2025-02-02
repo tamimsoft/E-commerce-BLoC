@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../utils/constants/image_path.dart';
-import '../../../common/widgets/widgets.dart';
+import '../../../../core/constants/image_path.dart';
+import '../../../../common/widgets/widgets.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppBar({

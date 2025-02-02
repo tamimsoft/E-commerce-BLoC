@@ -1,6 +1,6 @@
-import 'package:ecommerce2/app/features/product/data/model/product_model.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/favorite_button.dart';
-import 'package:ecommerce2/app/routes/routes_name.dart';
+import 'package:fakestore/app/features/product/data/model/product_model.dart';
+import 'package:fakestore/app/features/product/ui/widgets/favorite_button.dart';
+import 'package:fakestore/app/config/routes/routes_name.dart';
 
 import 'package:flutter/material.dart';
 

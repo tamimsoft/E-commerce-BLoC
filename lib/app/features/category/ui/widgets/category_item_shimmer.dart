@@ -1,4 +1,4 @@
-import 'package:ecommerce2/app/features/common/widgets/shimmer_placeholder.dart';
+import 'package:fakestore/app/common/widgets/shimmer_placeholder.dart';
 import 'package:flutter/material.dart';
 
 class CategoryItemShimmer extends StatelessWidget {

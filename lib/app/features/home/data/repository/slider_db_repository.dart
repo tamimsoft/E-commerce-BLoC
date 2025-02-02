@@ -1,7 +1,6 @@
+import 'package:fakestore/app/features/home/data/models/slider_model.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../database/app_database.dart';
-import '../models/slider_model.dart';
+import 'package:fakestore/app/core/services/database/app_database.dart';
 
 class SliderDBRepository {
   final AppDatabase _db;
@@ -20,7 +19,8 @@ class SliderDBRepository {
   Future<void> save(SliderModel slider) async {
     try {
       final sliderCompanion = slider.toDriftCompanion();
-      var i = await _db.into(_db.sliders).insertOnConflictUpdate(sliderCompanion);
+      var i =
+          await _db.into(_db.sliders).insertOnConflictUpdate(sliderCompanion);
       debugPrint('Save Slider:::$i');
     } catch (e) {
       debugPrint('Error Save Slider:::\n$e');

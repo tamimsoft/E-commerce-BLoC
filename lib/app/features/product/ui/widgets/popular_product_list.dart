@@ -1,10 +1,10 @@
-import 'package:ecommerce2/app/dependency_injection.dart';
-import 'package:ecommerce2/app/features/home/ui/widgets/section_header.dart';
-import 'package:ecommerce2/app/features/product/ui/blocs/popular_product_bloc/popular_product_bloc.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/product_item_shimmer.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/product_item.dart';
-import 'package:ecommerce2/app/routes/routes_name.dart';
-import 'package:ecommerce2/app/utils/constants/enums.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
+import 'package:fakestore/app/features/home/ui/widgets/section_header.dart';
+import 'package:fakestore/app/features/product/ui/blocs/popular_product_bloc/popular_product_bloc.dart';
+import 'package:fakestore/app/features/product/ui/widgets/product_item_shimmer.dart';
+import 'package:fakestore/app/features/product/ui/widgets/product_item.dart';
+import 'package:fakestore/app/config/routes/routes_name.dart';
+import 'package:fakestore/app/core/constants/enums.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter/material.dart';
@@ -27,13 +27,13 @@ class PopularProductList extends StatelessWidget {
         BlocBuilder<PopularProductBloc, PopularProductState>(
           builder: (context, state) {
             return SectionHeader(
-                title: ProductRemark.polularProduct.name,
+                title: ProductRemark.popularProduct.name,
                 onTap: () {
                   Navigator.pushNamed(
                     context,
                     RoutesName.productList,
                     arguments: {
-                      'title': ProductRemark.polularProduct.name,
+                      'title': ProductRemark.popularProduct.name,
                       'productList': state.productList
                     } as Map,
                   );

@@ -1,7 +1,7 @@
+import 'package:fakestore/app/features/category/data/model/category_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../database/app_database.dart';
-import '../model/category_model.dart';
+import 'package:fakestore/app/core/services/database/app_database.dart';
 
 class CategoryDbRepository {
   final AppDatabase _db;
@@ -20,7 +20,9 @@ class CategoryDbRepository {
   Future<void> save(CategoryModel category) async {
     try {
       final categoryCompanion = category.toDriftCompanion();
-      var i = await _db.into(_db.categories).insertOnConflictUpdate(categoryCompanion);
+      var i = await _db
+          .into(_db.categories)
+          .insertOnConflictUpdate(categoryCompanion);
       debugPrint('Save category:::$i');
     } catch (e) {
       debugPrint('Error Save category:::\n$e');

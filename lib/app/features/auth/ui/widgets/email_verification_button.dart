@@ -1,7 +1,7 @@
-import 'package:ecommerce2/app/features/auth/ui/bloc/auth_bloc.dart';
-import 'package:ecommerce2/app/routes/routes_name.dart';
-import 'package:ecommerce2/app/utils/helper/functions.dart';
-import 'package:ecommerce2/app/utils/helper/snack_bar.dart';
+import 'package:fakestore/app/features/auth/ui/bloc/auth_bloc.dart';
+import 'package:fakestore/app/config/routes/routes_name.dart';
+import 'package:fakestore/app/utils/helper/functions.dart';
+import 'package:fakestore/app/utils/helper/snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

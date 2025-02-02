@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:ecommerce2/app/features/auth/service/auth_service.dart';
-import 'package:ecommerce2/app/utils/constants/app_strings.dart';
-import 'package:ecommerce2/app/utils/helper/functions.dart';
+import 'package:fakestore/app/features/auth/service/auth_service.dart';
+import 'package:fakestore/app/core/constants/app_strings.dart';
+import 'package:fakestore/app/utils/helper/functions.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,6 +1,6 @@
-import 'package:ecommerce2/app/features/common/widgets/quantity_update_button.dart';
-import 'package:ecommerce2/app/features/product/data/model/product_model.dart';
-import 'package:ecommerce2/app/features/product/ui/widgets/rating_review_and_favorite.dart';
+import 'package:fakestore/app/common/widgets/quantity_update_button.dart';
+import 'package:fakestore/app/features/product/data/model/product_model.dart';
+import 'package:fakestore/app/features/product/ui/widgets/rating_review_and_favorite.dart';
 import 'package:flutter/material.dart';
 
 class ProductSummary extends StatelessWidget {

@@ -1,6 +1,6 @@
 {
-    "name": "ecommerce2",
-    "short_name": "ecommerce2",
+    "name": "fakestore",
+    "short_name": "fakestore",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

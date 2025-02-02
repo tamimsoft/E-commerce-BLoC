@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../routes/routes_name.dart';
+import '../../../../config/routes/routes_name.dart';
 import '../../../../utils/helper/functions.dart';
 import '../../../../utils/helper/snack_bar.dart';
 import '../bloc/auth_bloc.dart';

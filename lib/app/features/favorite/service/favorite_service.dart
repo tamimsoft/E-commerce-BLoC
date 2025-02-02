@@ -1,8 +1,8 @@
-import 'package:ecommerce2/app/dependency_injection.dart';
-import 'package:ecommerce2/app/features/auth/service/auth_service.dart';
-import 'package:ecommerce2/app/features/favorite/data/model/favorite_model.dart';
-import 'package:ecommerce2/app/features/favorite/data/repository/favorite_api_repository.dart';
-import 'package:ecommerce2/app/features/favorite/data/repository/favorite_db_repository.dart';
+import 'package:fakestore/app/config/dependency_injection.dart';
+import 'package:fakestore/app/features/auth/service/auth_service.dart';
+import 'package:fakestore/app/features/favorite/data/model/favorite_model.dart';
+import 'package:fakestore/app/features/favorite/data/repository/favorite_api_repository.dart';
+import 'package:fakestore/app/features/favorite/data/repository/favorite_db_repository.dart';
 
 class FavoriteService {
   final AuthService _authService = getIt<AuthService>();

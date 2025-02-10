@@ -1,96 +1,153 @@
-# Flutter E-Commerce Project Documentation
+# E-commerce BLoC Flutter App
 
-## Overview
-This document provides an overview of the dependencies used in a Flutter e-commerce project. These dependencies enable essential functionalities such as state management, database handling, HTTP requests, and UI enhancements.
-
----
-
-## Dependencies
-Below is a list of dependencies used in this project, categorized by their purpose:
-
-### **Core Dependencies**
-1. **intl: ^0.19.0**
-   - Provides internationalization and localization support, including date formatting and translation.
-
-2. **http: ^1.2.2**
-   - Simplifies making HTTP requests to APIs.
-
-3. **logger: ^2.5.0**
-   - A logger utility to log messages during development for debugging purposes.
-
-### **UI Enhancements**
-1. **cached_network_image: ^3.4.1**
-   - Enables efficient image loading and caching.
-
-2. **image_picker: ^1.1.2**
-   - Facilitates picking images from the gallery or camera.
-
-3. **flutter_svg: ^2.0.10+1**
-   - Renders SVG images in Flutter applications.
-
-4. **carousel_slider: ^5.0.0**
-   - Creates image carousels and sliders.
-
-5. **pinput: ^5.0.0**
-   - Provides a customizable input field, typically used for PIN entry.
-
-6. **shimmer: ^3.0.0**
-   - Displays shimmer effects to indicate loading states.
-
-7. **another_flushbar: ^1.12.30**
-   - Displays customizable snack bars and notifications.
-
-### **State Management**
-1. **flutter_bloc: ^8.1.6**
-   - A predictable state management library that uses the BLoC (Business Logic Component) pattern.
-
-2. **equatable: ^2.0.5**
-   - Simplifies equality comparisons, especially when used with BLoC.
-
-### **Local Database**
-1. **flutter_secure_storage: ^9.2.2**
-   - Securely stores sensitive data like tokens and credentials.
-
-2. **drift: ^2.23.1**
-   - A reactive persistence library for handling SQL databases in Flutter.
-
-3. **drift_flutter: ^0.2.4**
-   - Integrates Drift with Flutter for database management.
-
-4. **path_provider: ^2.1.5**
-   - Provides paths to commonly used directories like documents and temporary files.
-
-### **Notifications**
-1. **flutter_local_notifications: ^18.0.1**
-   - Schedules and shows local notifications.
+This is a sample **E-commerce** Flutter application built using the **BLoC** architecture. The app demonstrates the use of various Flutter features, including state management, secure storage, and local database (Drift).
 
 ---
 
-## Project Highlights
-This e-commerce project utilizes these dependencies to:
-- Fetch and display product data from APIs.
-- Cache and display images efficiently.
-- Implement a responsive and interactive UI with animations and effects.
-- Manage application state predictably with BLoC.
-- Store and secure user data using local databases.
-- Provide local notification functionality.
+## Features
+
+- **Authentication**: Login and Signup functionalities with secure token storage.
+- **Product Listing**: Displays products from a remote API and allows users to view detailed information.
+- **Shopping Cart**: Manage the shopping cart and interact with products.
+- **Local Storage**: Stores user data securely and persists data using Drift database.
 
 ---
 
-## Getting Started
-To get started with this project:
-1. Clone the repository.
-2. Install the dependencies:
-   ```bash
-   flutter pub get
-   ```
-3. Run the application:
-   ```bash
-   flutter run
-   ```
+## Project Setup
+
+### 1. Clone the repository
+
+First, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/tamimsoft/E-commerce-BLoC.git
+cd E-commerce-BLoC
+```
+
+### 2. Install FVM and Set Flutter Version
+
+This project uses **Flutter 3.27.3**. You can manage this version with **FVM (Flutter Version Manager)**.
+
+- Install **FVM** if you haven't already:
+
+  ```bash
+  dart pub global activate fvm
+  ```
+
+- Install the required Flutter version for the project:
+
+  ```bash
+  fvm install 3.27.3
+  ```
+
+- Use the specified Flutter version for the project:
+
+  ```bash
+  fvm use 3.27.3
+  ```
+
+### 3. Install Dependencies
+
+Make sure to install the project dependencies:
+
+```bash
+flutter pub get
+```
+
+### 4. Configure API Base URL
+
+Make sure to configure your **API base URL** in `lib/core/api_service.dart` if you want to use your own backend.
+
+```dart
+class ApiService {
+  final String baseUrl = 'https://your-api-url.com/';
+  // Rest of the code...
+}
+```
+
+### 5. Run the App
+
+Once all the dependencies are installed and configurations are set, you can run the app using:
+
+```bash
+flutter run
+```
 
 ---
 
-## Author
-Tamim Hasan
+## Project Structure
+
+The project follows the **BLoC pattern** and is organized into the following key folders:
+
+- **core/**: Contains core services like API handling, secure storage, Drift database setup.
+- **common/**: Holds reusable widgets and data models.
+- **features/**: Contains feature-specific functionality such as Authentication, Home, and Cart.
+- **models/**: Shared data models used across the app.
+
+---
+
+## Screenshots
+
+### Login Screen
+
+<img src="assets/screenshots/login.png" width="300">
+
+### Product Listing Screen
+
+<img src="assets/screenshots/product_listing.png" width="300">
+
+### Cart Screen
+
+<img src="assets/screenshots/cart.png" width="300">
+
+---
+
+## API Integration
+
+This app fetches product data and interacts with a sample API. You can customize the **API endpoints** in the `ApiService` class under `core/`.
+
+Here is an example of a sample endpoint for fetching products:
+
+```dart
+Future<List<ProductModel>> getProducts() async {
+  final response = await http.get(Uri.parse('$baseUrl/products'));
+  if (response.statusCode == 200) {
+    final List<dynamic> json = jsonDecode(response.body);
+    return json.map((e) => ProductModel.fromJson(e)).toList();
+  } else {
+    throw Exception('Failed to load products');
+  }
+}
+```
+
+Make sure to replace the `baseUrl` with your actual API base URL.
+
+---
+
+## Database Integration (Drift)
+
+For local data persistence, the app uses **Drift** (formerly known as `moor`). You can find the Drift setup in `core/database/` and customize it according to your requirements.
+
+### Example: Creating a table
+
+```dart
+class Products extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  TextColumn get name => text().withLength(min: 1, max: 50)();
+  RealColumn get price => real()();
+  TextColumn get imageUrl => text().nullable()();
+}
+```
+
+---
+
+## Contributing
+
+Feel free to fork this project and contribute by creating pull requests. For bug reports or feature requests, please open an issue.
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
 

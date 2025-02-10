@@ -1,4 +1,6 @@
+import 'package:fakestore/app/common/data/models/user_model.dart';
 import 'package:fakestore/app/core/services/secure_storage/secure_storage.dart';
+import 'package:fakestore/app/features/auth/data/models/verify_model.dart';
 import 'package:fakestore/app/features/auth/data/repository/auth_api_repository.dart';
 
 class AuthService {
@@ -12,10 +14,25 @@ class AuthService {
     return _storage.read(key: SSKey.token).then((token) => token.isNotEmpty);
   }
 
-  Future<bool> sendEmailVerification({required String email}) async {
+  Future<bool> signUp({required UserModel user}) async {
     try {
       await _storage.clearAll();
-      await _authApiRepository.emailVerify(email);
+      final UserModel userModel = await _authApiRepository.signUp(user);
+      return true;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<bool> login({required String email, required String password}) async {
+    try {
+      await _storage.clearAll();
+      final VerifyModel verifyModel = await _authApiRepository.login(email: email, password: password);
+      final String token = verifyModel.token ?? '';
+      if (token.isEmpty) {
+        return false;
+      }
+      await _storage.write(key: SSKey.token, value: token);
       return true;
     } catch (e) {
       rethrow;
@@ -24,7 +41,11 @@ class AuthService {
 
   Future<bool> otpVerify({required String email, required String otp}) async {
     try {
-      String token = await _authApiRepository.otpVerify(email, otp);
+      final VerifyModel verifyModel = await _authApiRepository.otpVerify(email: email, otp: otp);
+      final String token = verifyModel.token ?? '';
+      if (token.isEmpty) {
+        return false;
+      }
       await _storage.write(key: SSKey.token, value: token);
       return true;
     } catch (e) {

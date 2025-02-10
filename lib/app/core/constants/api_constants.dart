@@ -6,14 +6,10 @@ class ApiConstants {
   static const String _baseUrl = 'https://ecommerce-api.codesilicon.com/api';
 
   // Authorization
-  static String emailVerify(String email) => '$_baseUrl/UserLogin/$email';
-
-  static String otpVerify(String email, String otp) => '$_baseUrl/VerifyLogin/$email/$otp';
-  static const logout = '$_baseUrl/logout';
-
-  // Profile
-  static const createProfile = '$_baseUrl/CreateProfile';
-  static const profile = '$_baseUrl/ReadProfile';
+  static const String signUp = '$_baseUrl/auth/signup';
+  static const String otpVerify = '$_baseUrl/auth/verify-otp';
+  static const String login = '$_baseUrl/auth/login';
+  static const String profile = '$_baseUrl/auth/profile';
 
   // Product
   static const productsSlider = '$_baseUrl/ListProductSlider';

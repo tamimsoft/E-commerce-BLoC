@@ -16,12 +16,15 @@ class Routes {
         widget = const SplashScreen();
         break;
       case RoutesName.login:
-        widget = const SignInScreen();
+        widget = const LoginScreen();
+        break;
+      case RoutesName.signup:
+        widget = const SignupScreen();
         break;
       case RoutesName.otpVerify:
-        widget = OTPVerificationScreen();
+        widget = OTPScreen();
         break;
-      case RoutesName.mainScreen:
+      case RoutesName.home:
         widget = MainBottomNavBarScreen();
         break;
       case RoutesName.productList:

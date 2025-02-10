@@ -9,6 +9,7 @@ class AppTheme {
       useMaterial3: true,
       inputDecorationTheme: CustomInputDecorationTheme.light,
       elevatedButtonTheme: CustomElevatedButtonTheme.light,
+      outlinedButtonTheme: CustomOutlinedButtonTheme.light,
       textButtonTheme: CustomTextButtonTheme.light,
       scaffoldBackgroundColor: Colors.white,
       appBarTheme: const AppBarTheme(backgroundColor: Colors.white),

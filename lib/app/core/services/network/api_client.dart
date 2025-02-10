@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:fakestore/app/core/constants/api_constants.dart';
-import 'package:fakestore/app/utils/logger/app_logger.dart';
+import 'package:fakestore/app/core/services/logger/app_logger.dart';
 import 'package:http/http.dart' as http;
 
 import 'api_base.dart';

@@ -1,3 +1,4 @@
+import 'package:fakestore/app/common/widgets/button_progress_indicator.dart';
 import 'package:fakestore/app/features/checkout/ui/bloc/checkout_bloc.dart';
 import 'package:fakestore/app/config/routes/routes_name.dart';
 import 'package:fakestore/app/utils/helper/dialog_box.dart';
@@ -37,7 +38,7 @@ class CheckoutButton extends StatelessWidget {
                 onPressed: () {
                   context.read<CheckoutBloc>().add(CheckoutEventCheckout());
                 },
-                child: state.status == Status.loading ? buttonLoading() : const Text('Checkout'),
+                child: state.status == Status.loading ? ButtonProgressIndicator() : const Text('Checkout'),
               );
             },
           ),

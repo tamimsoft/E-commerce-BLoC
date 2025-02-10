@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:fakestore/app/core/services/secure_storage/secure_storage.dart';
-import 'package:fakestore/app/utils/logger/app_logger.dart';
+import 'package:fakestore/app/core/services/logger/app_logger.dart';
 import 'package:fakestore/app/core/services/network/response/api_response.dart';
 import 'package:http/http.dart' as http;
 

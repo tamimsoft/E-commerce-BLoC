@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-// import '../../features/common/widgets/app_alert_dialog.dart';
-import '../../core/constants/app_colors.dart';
-
 extension EmailValidator on String {
   bool get isEmail {
     return RegExp(
@@ -10,42 +7,6 @@ extension EmailValidator on String {
         .hasMatch(this);
   }
 }
-
-Widget loading() {
-  return const Center(
-    child: CircularProgressIndicator(
-      color: AppColors.primary,
-      // strokeWidth: 2,
-    ),
-  );
-}
-
-Widget buttonLoading({Color? color}) {
-  return SizedBox(
-    width: 24,
-    height: 24,
-    child: CircularProgressIndicator(
-      color: color ?? Colors.white,
-      strokeWidth: 2,
-    ),
-  );
-}
-
-// void deleteDialog({
-//   required VoidCallback onConfirm,
-//   String? message,
-// }) {
-//   GenericAlertDialog.show(
-//     title: 'Delete Confirmation',
-//     message: message ?? 'Are you sure you want to Delete this task?',
-//     confirmText: 'Delete',
-//     cancelText: 'Cancel',
-//     onConfirm: onConfirm,
-//     onCancel: () {
-//       // Handle cancel action
-//     },
-//   );
-// }
 
 Color getColorFromName(String name) {
   switch (name.toLowerCase()) {

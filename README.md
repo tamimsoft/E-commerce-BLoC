@@ -81,7 +81,6 @@ The project follows the **BLoC pattern** and is organized into the following key
 
  Login Screen | Signup Screen |OTP Screen
 :------------:|:-------------:|:--------:
-
 <img src="assets/screenshots/login.png" width="300">|<img src="assets/screenshots/signup.png" width="300">|<img src="assets/screenshots/otp.png" width="300">
 
 ### Others Screens

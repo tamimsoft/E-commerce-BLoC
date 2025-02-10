@@ -87,7 +87,6 @@ The project follows the **BLoC pattern** and is organized into the following key
 
 | Home Screen | Category Screen | Product List Screen | Product Details Screen |
 |:-----------:|:---------------:|:-------------------:|:----------------------:|
-
 <img src="assets/screenshots/home.png" width="300">|
 <img src="assets/screenshots/category.png" width="300">|
 <img src="assets/screenshots/product_list.png" width="300">|
@@ -96,7 +95,6 @@ The project follows the **BLoC pattern** and is organized into the following key
 
 | Favourite List Screen | Checkout Screen | Cart List Screen |
 |:------------------:|:-------------:|:----------------:|
-
 <img src="assets/screenshots/favorite_list.png" width="300">|
 <img src="assets/screenshots/checkout.png" width="300">|
 <img src="assets/screenshots/cart_list.png" width="300">

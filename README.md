@@ -1,4 +1,4 @@
-# E-commerce BLoC Flutter App
+# Fake Store
 
 This is a sample **E-commerce** Flutter application built using the **BLoC** architecture. The app demonstrates the use of various Flutter features, including state management, secure storage, and local database (Drift).
 

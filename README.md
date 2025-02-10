@@ -54,18 +54,7 @@ Make sure to install the project dependencies:
 flutter pub get
 ```
 
-### 4. Configure API Base URL
-
-Make sure to configure your **API base URL** in `lib/core/api_service.dart` if you want to use your own backend.
-
-```dart
-class ApiService {
-  final String baseUrl = 'https://your-api-url.com/';
-  // Rest of the code...
-}
-```
-
-### 5. Run the App
+### 4. Run the App
 
 Once all the dependencies are installed and configurations are set, you can run the app using:
 
@@ -90,15 +79,43 @@ The project follows the **BLoC pattern** and is organized into the following key
 
 ### Login Screen
 
-<img src="assets/screenshots/login.png" width="300">
+<img src="assets/screenshots/login.png" width="300" alt="">
 
-### Product Listing Screen
+### Signup Screen
 
-<img src="assets/screenshots/product_listing.png" width="300">
+<img src="assets/screenshots/signup.png" width="300">
+
+### OTP Screen
+
+<img src="assets/screenshots/otp.png" width="300">
+
+### Home Screen
+
+<img src="assets/screenshots/home.png" width="300">
+
+### Category List Screen
+
+<img src="assets/screenshots/category.png" width="300">
+
+### Product List Screen
+
+<img src="assets/screenshots/product_list.png" width="300">
+
+### Product Details Screen
+
+<img src="assets/screenshots/product_details.png" width="300">
+
+### Favourite List Screen
+
+<img src="assets/screenshots/favorite_list.png" width="300">
 
 ### Cart Screen
 
-<img src="assets/screenshots/cart.png" width="300">
+<img src="assets/screenshots/cart_list.png" width="300">
+
+### Checkout Screen
+
+<img src="assets/screenshots/checkout.png" width="300">
 
 ---
 
@@ -141,11 +158,6 @@ class Products extends Table {
 
 ---
 
-## Contributing
-
-Feel free to fork this project and contribute by creating pull requests. For bug reports or feature requests, please open an issue.
-
----
 
 ## License
 

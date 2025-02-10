@@ -77,51 +77,39 @@ The project follows the **BLoC pattern** and is organized into the following key
 
 ## Screenshots
 
-### Login Screen
+### Auth Screens
 
-<img src="assets/screenshots/login.png" width="300" alt="">
+| Login Screen | Signup Screen |OTP Screen|
+|:------------:|:-------------:|:--------:|
 
-### Signup Screen
-
-<img src="assets/screenshots/signup.png" width="300">
-
-### OTP Screen
-
+<img src="assets/screenshots/login.png" width="792" alt="">|
+<img src="assets/screenshots/signup.png" width="300">|
 <img src="assets/screenshots/otp.png" width="300">
 
-### Home Screen
+### Others Screens
 
-<img src="assets/screenshots/home.png" width="300">
+| Home Screen | Category Screen | Product List Screen | Product Details Screen |
+|:-----------:|:---------------:|:-------------------:|:----------------------:|
 
-### Category List Screen
-
-<img src="assets/screenshots/category.png" width="300">
-
-### Product List Screen
-
-<img src="assets/screenshots/product_list.png" width="300">
-
-### Product Details Screen
-
+<img src="assets/screenshots/home.png" width="300">|
+<img src="assets/screenshots/category.png" width="300">|
+<img src="assets/screenshots/product_list.png" width="300">|
 <img src="assets/screenshots/product_details.png" width="300">
 
-### Favourite List Screen
 
-<img src="assets/screenshots/favorite_list.png" width="300">
+| Favourite List Screen | Checkout Screen | Cart List Screen |
+|:------------------:|:-------------:|:----------------:|
 
-### Cart Screen
-
+<img src="assets/screenshots/favorite_list.png" width="300">|
+<img src="assets/screenshots/checkout.png" width="300">|
 <img src="assets/screenshots/cart_list.png" width="300">
 
-### Checkout Screen
-
-<img src="assets/screenshots/checkout.png" width="300">
 
 ---
 
 ## API Integration
 
-This app fetches product data and interacts with a sample API. You can customize the **API endpoints** in the `ApiService` class under `core/`.
+This app fetches product data and interacts with a sample API. You can customize the **API endpoints** in the `ApiConstants` class under `core/constants/api_constants.dart`.
 
 Here is an example of a sample endpoint for fetching products:
 
@@ -143,7 +131,7 @@ Make sure to replace the `baseUrl` with your actual API base URL.
 
 ## Database Integration (Drift)
 
-For local data persistence, the app uses **Drift** (formerly known as `moor`). You can find the Drift setup in `core/database/` and customize it according to your requirements.
+For local data persistence, the app uses **Drift** (formerly known as `moor`). You can find the Drift setup in `core/services/database/` and customize it according to your requirements.
 
 ### Example: Creating a table
 
@@ -158,8 +146,4 @@ class Products extends Table {
 
 ---
 
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
